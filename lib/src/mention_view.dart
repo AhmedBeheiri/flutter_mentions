@@ -50,9 +50,12 @@ class FlutterMentions extends StatefulWidget {
     this.appendSpaceOnAdd = true,
     this.hideSuggestionList = false,
     this.onSuggestionVisibleChanged,
+    this.inputFormatters,
   }) : super(key: key);
 
   final bool hideSuggestionList;
+
+  final List<TextInputFormatter>? inputFormatters;
 
   /// default text for the Mention Input.
   final String? defaultText;
@@ -451,6 +454,7 @@ class FlutterMentionsState extends State<FlutterMentions> {
                 maxLines: widget.maxLines,
                 minLines: widget.minLines,
                 maxLength: widget.maxLength,
+                inputFormatters: widget.inputFormatters,
                 focusNode: widget.focusNode,
                 keyboardType: widget.keyboardType,
                 keyboardAppearance: widget.keyboardAppearance,

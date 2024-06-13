@@ -1,4 +1,4 @@
-<p align="center">
+    <p align="center">
   <img src="https://i.imgur.com/JVM530f.png" width="240" />
   <h1 align="center" style="font-size: 48px;">📛 Flutter Mentions</h1>
   <h5 align="center">A simple flutter input widget to add <code>@</code> mentions functionality to your app</h5>
